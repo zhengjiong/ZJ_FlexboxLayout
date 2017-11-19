@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        justifyContent属性定义了项目在主轴上的对齐方式:
+            flex_start（默认值）：左对齐
+            flex_end：右对齐
+            center： 居中
+            space_around：每个项目两侧的间隔相等。项目之间的间隔比项目与边框的间隔大一倍。
+            space_between：两端对齐，项目之间的间隔都相等。
+    -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="flex_start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="flex_end">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_around">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_between">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

@@ -20,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         recyclerview.layoutManager = LinearLayoutManager(this)
 
         recyclerview.adapter = Adapter(listOf(
-                Item("demo-1:flexDirection, 决定弹性子元素的排列方式", R.layout.demo1_layout),
-                Item("demo-2:flexWrap该属性定义如果一条轴线排不下, 如何换行", R.layout.demo2_layout)
+                Item("demo-1:flexDirection 决定弹性子元素的排列方式", R.layout.demo1_layout),
+                Item("demo-2:flexWrap 该属性定义如果一条轴线排不下, 如何换行", R.layout.demo2_layout),
+                Item("demo-3:justifyContent 属性定义了项目在主轴上的对齐方式", R.layout.demo3_layout)
         ))
     }
 
