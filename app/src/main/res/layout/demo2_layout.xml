@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--
+        1.nowrap不换行(默认)
+    -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        android:background="#a0bd71a1">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview4"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview5"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <!--
+        2.wrap换行, 第一行在上方
+    -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        android:background="#a0bd71a1">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview4"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview5"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <!--
+        3.wrap_reverse换行, 第一行在下方
+    -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap_reverse"
+        android:background="#a0bd71a1">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview4"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview5"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview6"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview7"
+            android:textSize="16dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>
