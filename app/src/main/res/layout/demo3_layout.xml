@@ -6,6 +6,8 @@
     android:orientation="vertical">
 
     <!--
+    内容对齐（justify-content）属性应用在弹性容器上，把弹性项沿着弹性容器的主轴线（main axis）对齐。
+
     官网的意思是这个属性控制沿着主轴对齐，也就是说，当flexDirection设置ROW的时候，主轴就是行，
     按行进行对齐，如果flexDirection设置的是Column，主轴就是列，那就按列进行对齐
 

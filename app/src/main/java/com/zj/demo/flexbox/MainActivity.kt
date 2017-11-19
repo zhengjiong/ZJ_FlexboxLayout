@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
                 Item("demo-1:flexDirection 决定弹性子元素的排列方式", R.layout.demo1_layout),
                 Item("demo-2:flexWrap 该属性定义如果一条轴线排不下, 如何换行", R.layout.demo2_layout),
                 Item("demo-3:justifyContent 属性定义了项目在主轴上的对齐方式,官网的意思是这个属性控制沿着主轴对齐，也就是说，当flexDirection设置ROW的时候，主轴就是行，按行进行对齐，如果flexDirection设置的是Column，主轴就是列，那就按列进行对齐", R.layout.demo3_layout),
-                Item("demo-4:flexWrap ", R.layout.demo4_layout)
+                Item("demo-4:alignItems ", R.layout.demo4_layout),
+                Item("demo-5: ", FlexboxDemoActivity::class.java)
         ))
     }
 
@@ -35,7 +36,9 @@ class MainActivity : AppCompatActivity() {
             this.layout = layout
         }
 
-        constructor(title: String, clazz: Class<*>) : this(title)
+        constructor(title: String, clazz: Class<*>) : this(title){
+            this.clazz = clazz
+        }
     }
 
     class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
