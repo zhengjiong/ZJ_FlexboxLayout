@@ -6,22 +6,24 @@
     android:orientation="vertical">
 
     <!--
-    官网的意思是这个属性控制沿着主轴对齐，也就是说，当flexDirection设置ROW的时候，主轴就是行，
-    按行进行对齐，如果flexDirection设置的是Column，主轴就是列，那就按列进行对齐
+        官网介绍，此属性控制沿横轴的对齐方式，意思其实就是如果当前Direction为ROW，比如一行items，
+        可以放在最上面，也可以放在最下面，中间等等。如果Direction为column，
+        items就可以放在最左边、中间、或是右边等等。
 
-        justifyContent属性定义了项目在主轴上的对齐方式:
-            flex_start（默认值）：左对齐
-            flex_end：右对齐
-            center： 居中
-            space_around：每个项目两侧的间隔相等。项目之间的间隔比项目与边框的间隔大一倍。
-            space_between：两端对齐，项目之间的间隔都相等。
+        alignItems:
+            stretch (default)
+            flex_start
+            flex_end
+            center
+            baseline
     -->
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         app:flexDirection="row"
+        android:background="#48c23d"
         app:flexWrap="nowrap"
-        app:justifyContent="flex_start">
+        app:alignItems="flex_start">
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,44 +52,11 @@
 
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_height="100dp"
+        android:background="#bd71a1"
         app:flexDirection="row"
         app:flexWrap="nowrap"
-        app:justifyContent="flex_end">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#f9c798"
-            android:padding="8dp"
-            android:text="textview1"
-            android:textSize="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#f9c798"
-            android:padding="8dp"
-            android:text="textview2"
-            android:textSize="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#f9c798"
-            android:padding="8dp"
-            android:text="textview3"
-            android:textSize="16dp" />
-    </com.google.android.flexbox.FlexboxLayout>
-
-    <com.google.android.flexbox.FlexboxLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:flexDirection="row"
-        app:flexWrap="nowrap"
-        app:justifyContent="center">
+        app:alignItems="flex_end">
 
         <TextView
             android:layout_width="wrap_content"
@@ -115,11 +84,52 @@
     </com.google.android.flexbox.FlexboxLayout>
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_height="100dp"
+        android:background="#48c23d"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:alignItems="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview2"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9c798"
+            android:padding="8dp"
+            android:text="textview3"
+            android:textSize="16dp" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#bd71a1"
         app:flexDirection="row"
         app:flexWrap="nowrap"
-        app:justifyContent="space_around">
+        app:alignItems="baseline">
 
         <TextView
             android:layout_width="wrap_content"
@@ -147,11 +157,11 @@
     </com.google.android.flexbox.FlexboxLayout>
     <com.google.android.flexbox.FlexboxLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_height="100dp"
+        android:background="#48c23d"
         app:flexDirection="row"
         app:flexWrap="nowrap"
-        app:justifyContent="space_between">
+        app:alignItems="stretch">
 
         <TextView
             android:layout_width="wrap_content"
